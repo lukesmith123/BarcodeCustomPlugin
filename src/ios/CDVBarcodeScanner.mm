@@ -956,16 +956,16 @@ parentViewController:(UIViewController*)parentViewController
     UIGraphicsBeginImageContext(CGSizeMake(RETICLE_SIZE, RETICLE_SIZE));
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    if (self.processor.is1D) {
-        UIColor* color = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:RETICLE_ALPHA];
-        CGContextSetStrokeColorWithColor(context, color.CGColor);
-        CGContextSetLineWidth(context, RETICLE_WIDTH);
-        CGContextBeginPath(context);
-        CGFloat lineOffset = RETICLE_OFFSET+(0.5*RETICLE_WIDTH);
-        CGContextMoveToPoint(context, lineOffset, RETICLE_SIZE/2);
-        CGContextAddLineToPoint(context, RETICLE_SIZE-lineOffset, 0.5*RETICLE_SIZE);
-        CGContextStrokePath(context);
-    }
+   //if (self.processor.is1D) {
+     //   UIColor* color = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:RETICLE_ALPHA];
+      //  CGContextSetStrokeColorWithColor(context, color.CGColor);
+     //   CGContextSetLineWidth(context, RETICLE_WIDTH);
+   //     CGContextBeginPath(context);
+    //    CGFloat lineOffset = RETICLE_OFFSET+(0.5*RETICLE_WIDTH);
+   //     CGContextMoveToPoint(context, lineOffset, RETICLE_SIZE/2);
+   //     CGContextAddLineToPoint(context, RETICLE_SIZE-lineOffset, 0.5*RETICLE_SIZE);
+   //     CGContextStrokePath(context);
+ //   }
     
     if (self.processor.is2D) {
         UIColor* color = [UIColor colorWithRed:0.57 green:0.57 blue:0.57 alpha:RETICLE_ALPHA];
