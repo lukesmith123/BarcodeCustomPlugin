@@ -875,6 +875,7 @@ parentViewController:(UIViewController*)parentViewController
     
     id cancelButton = [[UIBarButtonItem alloc]
                        initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+					   title:@"Zurück";
                        target:(id)self
                        action:@selector(cancelButtonPressed:)
                        ];
